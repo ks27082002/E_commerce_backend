@@ -28,7 +28,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 const __dirname = path.resolve(); // Set {__dirname} to current working directory
-app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
+app.use('/uploads', express.static(path.join("https://e-commerce-backend-3-gjp5.onrender.com", 'uploads')));
 
 app.use('/api/v1/products', productRoutes);
 app.use('/api/v1/users', userRoutes);
